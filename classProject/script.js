@@ -35,7 +35,7 @@ for(var i = 0; i < images.length;i++){
         if((images[0].src === checker[0].src) && (images[1].src === checker[1].src) && (images[2].src === checker[2].src) && (images[3].src === checker[3].src)
         && (images[4].src === checker[4].src) && (images[5].src === checker[5].src) && (images[6].src === checker[6].src) && (images[7].src === checker[7].src)
         && (images[8].src === checker[8].src)){
-            level2.href = "#";
+            level2.href = "T index.html";
             level2.style.color = "green";
             level2.style.fontSize = "30px"
             winElement.append(win);
