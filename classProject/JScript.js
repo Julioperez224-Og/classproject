@@ -56,6 +56,7 @@ function winner() {
     footer.appendChild(winElement);
     footer.style.display = "flex";
     footer.style.flexDirection = "column";
+    level_4.href = "";
   }
 }
 
