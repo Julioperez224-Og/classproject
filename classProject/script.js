@@ -6,11 +6,13 @@ var y_holder
 var checker = document.querySelectorAll("#checker img");
 var footer = document.querySelector("footer");
 var rules = document.createElement("h2");
-var text = document.createTextNode("Click two squares to swap the image locations. Keep doing so until the real image is create. ")
-var winElement = document.createElement("h1")
-var win = document.createTextNode("YOU WIN! PROCEED TO THE NEXT LEVEL!")
+var text = document.createTextNode("Click two squares to swap the image locations. Keep doing so until the real image is create. ");
+var winElement = document.createElement("h1");
+var win = document.createTextNode("YOU WIN! PROCEED TO THE NEXT LEVEL!");
+
+var copyright = document.createTextNode("Copyright 2020 Group Project");
 var counter = 0
-var level2 = document.querySelector("#level_2")
+var level2 = document.querySelector("#level_2");
 
 rules.appendChild(text);
 footer.appendChild(rules);
@@ -37,6 +39,7 @@ for(var i = 0; i < images.length;i++){
             level2.style.color = "green";
             level2.style.fontSize = "30px"
             winElement.append(win);
+            winElement.append(copyright);
             footer.appendChild(winElement);
             footer.style.display = "flex";
             footer.style.flexDirection = "column";
