@@ -1,0 +1,92 @@
+var images = document.querySelectorAll("#puzzle img");
+var contains_active = document.querySelectorAll("img .active");
+var x_holder;
+var checker = document.querySelectorAll("#checker img");
+var footer = document.querySelector("footer");
+var rules = document.createElement("h2");
+var text = document.createTextNode(
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffebcd;
+}
+
+h1 {
+  font-size: 2em;
+  color: #3c85a4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navBar li a {
+  margin: 10px;
+  font-size: 1.2em;
+  color: #3c85a4;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100vw;
+  max-height: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.level_1_header {
+  text-align: center;
+  font-size: 40px;
+  color: #f0972d;
+}
+
+.puzzle img,
+.checker img {
+  width: 200px;
+  height: 200px;
+  max-width: 33.3vw;
+  max-height: 33.3vw;
+}
+
+.puzzle,
+.checker {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 600px;
+  max-width: 100vw;
+  margin-top: 50px;
+}
+
+.checker {
+  display: none;
+}
+.active {
+  border: 2px solid red;
+}
+
+@media (max-width: 435px) {
+  .navBar li a {
+    margin: 10px;
+    font-size: 0.8em;
+    color: #3c85a4;
+    font-weight: bold;
+  }
+}
+
